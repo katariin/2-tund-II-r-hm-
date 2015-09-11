@@ -3,7 +3,7 @@
    $first_name = "Katrin";
    $last_name = "Voroshilova"
 
-   echo $first_name;
+   echo $first_name." ".$last_name
    
    
    
@@ -23,8 +23,39 @@
 	 } else {
 		//väärt
         echo "täisealine"		
-	    
-	   
+	     
 	   
    }
 
+   ?>
+   
+   <br>
+   
+ <?php
+ 
+ for($i = 0; $i < $age; $i = +1) {
+	 
+	 
+	 //see mida korratakse
+	 echo "palju.$i.";
+	 
+	 
+ }
+
+ 
+ echo"õnne";
+ 
+ ?>
+ 
+  <br>
+  
+  <?php
+  
+  
+  // kuupäev kujul: Friday, 11.09.2015
+  echo(date("l"));
+  
+  ?>
+  
+  
+ 
