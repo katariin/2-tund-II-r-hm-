@@ -10,7 +10,7 @@
 	}
 	echo "Connected successfully";
 	
-	         require_once("../table.txt")
+	         <?php require_once("../table.txt"); ?>
 	   // valmistame ja yhendame
 	            $stmt = $conn->prepare("INSERT INTO users (name, lastname, age, email, password) VALUES ("sss", ?, ?, ?, ?)");
 	             $stmt->bind_param ("sss", $firstname, $age, $lastname, $email);
