@@ -12,8 +12,8 @@
 	
 	         require_once("../table.txt")
 	   // valmistame ja yhendame
-	            $stmt = $conn->prepare("INSERT INTO users (name, lastname, email, password) VALUES (?, ?, ?)");
-	             $stmt->bind_param ("sss", $firstname, $lastname, $email);
+	            $stmt = $conn->prepare("INSERT INTO users (name, lastname, age, email, password) VALUES ("sss", ?, ?, ?, ?)");
+	             $stmt->bind_param ("sss", $firstname, $age, $lastname, $email);
 				 
 	     $stmt->close();
 		 $conn->close();
